@@ -6,7 +6,7 @@ import ProjectsPage from "./pages/projects/ProjectsPage";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/luc-portfolio">
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/sobre" element={<AboutPage />} />
