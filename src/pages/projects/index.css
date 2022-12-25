@@ -109,8 +109,8 @@ div#project-card {
   margin: 20px 0px 0px 20px;
   box-shadow: 0px 0px 5px 0px #cecece;
   top: -10px;
-  transition: box-shadow 400ms;
-  transition-timing-function: linear;
+  transition: box-shadow 200ms, top 200ms;
+  transition-timing-function: ease;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -118,7 +118,8 @@ div#project-card {
 }
 
 div#project-card:hover {
-  box-shadow: 0px 0px 7px 0px #888;
+  box-shadow: 0px 0px 9px 0px #ff7d00;
+  top: 0px;
 }
 
 div#project-card-icon {
