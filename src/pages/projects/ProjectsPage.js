@@ -17,7 +17,7 @@ const ProjectsPage = () => {
             <MdArrowBack
               id="return-button"
               onClick={() => {
-                window.location.href = "/";
+                window.location.href = "/luc-portfolio";
               }}
             />
             <span>{projects.length}</span>

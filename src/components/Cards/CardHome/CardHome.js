@@ -42,7 +42,7 @@ const CardHome = ({ id, size }) => {
         <div
           id="rodape1"
           onClick={() => {
-            window.location.href = "/sobre";
+            window.location.href = "/luc-portfolio/sobre";
           }}
         >
           <span style={styleFonts["bot"][size]}>{data.rodape1}</span>
@@ -50,7 +50,7 @@ const CardHome = ({ id, size }) => {
         <div
           id="rodape2"
           onClick={() => {
-            window.location.href = "/projetos";
+            window.location.href = "/luc-portfolio/projetos";
           }}
         >
           <span style={styleFonts["bot"][size]}>{data.rodape2}</span>
