@@ -5,9 +5,9 @@ import "react-perfect-scrollbar/dist/css/styles.css";
 
 import { projects } from "../../utils/constants";
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ setPage }) => {
   return (
-    <div className="projectsSetting notSelect">
+    <>
       <div id="project-top">
         <div id="project-top-title">
           <span>{"Projetos"}</span>
@@ -17,7 +17,7 @@ const ProjectsPage = () => {
             <MdArrowBack
               id="return-button"
               onClick={() => {
-                window.location.href = "/luc-portfolio";
+                setPage(0);
               }}
             />
             <span>{projects.length}</span>
@@ -55,7 +55,7 @@ const ProjectsPage = () => {
         </PerfectScrollbar>
       </div>
       <div id="project-bot"></div>
-    </div>
+    </>
   );
 };
 

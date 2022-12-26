@@ -4,7 +4,7 @@ import { dataCards } from "../../../utils/constants";
 import { SocialIcon } from "react-social-icons";
 import { styleFonts } from "./style";
 
-const CardHome = ({ id, size }) => {
+const CardHome = ({ id, size, setPage }) => {
   const data = { ...dataCards[id] };
   return (
     <div className="card">
@@ -42,7 +42,7 @@ const CardHome = ({ id, size }) => {
         <div
           id="rodape1"
           onClick={() => {
-            window.location.href = "/luc-portfolio/sobre";
+            setPage(0);
           }}
         >
           <span style={styleFonts["bot"][size]}>{data.rodape1}</span>
@@ -50,7 +50,7 @@ const CardHome = ({ id, size }) => {
         <div
           id="rodape2"
           onClick={() => {
-            window.location.href = "/luc-portfolio/projetos";
+            setPage(2);
           }}
         >
           <span style={styleFonts["bot"][size]}>{data.rodape2}</span>
