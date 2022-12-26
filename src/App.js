@@ -6,11 +6,15 @@ import ProjectsPage from "./pages/projects/ProjectsPage";
 
 const App = () => {
   return (
-    <Router basename="/luc-portfolio">
+    <Router>
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/sobre" element={<AboutPage />} />
-        <Route exact path="/projetos" element={<ProjectsPage />} />
+        <Route exact path="/luc-portfolio/" element={<HomePage />} />
+        <Route exact path="/luc-portfolio/sobre" element={<AboutPage />} />
+        <Route
+          exact
+          path="/luc-portfolio/projetos"
+          element={<ProjectsPage />}
+        />
       </Routes>
     </Router>
   );
