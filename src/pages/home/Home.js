@@ -6,29 +6,29 @@ import Profile from "../../components/Profile/Profile";
 import Informations from "../../components/Informations/Informations";
 import Menu from "../../components/Menu/Menu";
 
-const Home = ({ basename, setPage, size }) => {
+const Home = ({ basenamePage, setPage, size }) => {
   //
   const [open, setOpen] = useState(false);
   //
   useEffect(() => {
-    tesF(basename);
-  }, [basename]);
-  tesF(basename, "resize");
+    tesF(basenamePage);
+  }, [basenamePage]);
+  tesF(basenamePage, "resize");
   //
   return (
     <div
-      id={`${basename}-sections`}
+      id={`${basenamePage}-sections`}
       style={size === "xl" ? {} : size === "lg" ? { width: "96%" } : {}}
     >
-      <Profile basename={basename} setPage={setPage} size={size} />
+      <Profile basenamePage={basenamePage} setPage={setPage} size={size} />
       <Informations
-        basename={basename}
+        basenamePage={basenamePage}
         setPage={setPage}
         size={size}
         open={open}
       />
       <Menu
-        basename={basename}
+        basenamePage={basenamePage}
         setPage={setPage}
         open={open}
         setOpen={setOpen}

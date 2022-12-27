@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import TechPercent from "../../components/TechPercent/TechPercent";
 import { MdDownload } from "react-icons/md";
 
-const Profile = ({ basename, setPage, size }) => {
+const Profile = ({ basenamePage, setPage, size }) => {
   const [state, setState] = useState({
     percents: [0, 0, 0, 0],
     language: [0, 0, 0],
@@ -50,9 +50,9 @@ const Profile = ({ basename, setPage, size }) => {
   });
   //
   return (
-    <div id={`${basename}-section-left`}>
-      <div id={`${basename}-section-left-top`}>
-        <div id={`${basename}-section-left-top-image`}>
+    <div id={`${basenamePage}-section-left`}>
+      <div id={`${basenamePage}-section-left-top`}>
+        <div id={`${basenamePage}-section-left-top-image`}>
           <img
             draggable="false"
             src={home.image}
@@ -60,42 +60,42 @@ const Profile = ({ basename, setPage, size }) => {
             alt={"minha foto"}
           />
         </div>
-        <div id={`${basename}-section-left-top-desc`}>
-          <span id={`${basename}-name`}>{home.name}</span>
-          <span id={`${basename}-oficio`}>{home.oficio}</span>
-          <span id={`${basename}-study`}>{home.study}</span>
+        <div id={`${basenamePage}-section-left-top-desc`}>
+          <span id={`${basenamePage}-name`}>{home.name}</span>
+          <span id={`${basenamePage}-oficio`}>{home.oficio}</span>
+          <span id={`${basenamePage}-study`}>{home.study}</span>
         </div>
       </div>
-      <div id={`${basename}-section-left-mid`}>
-        <div id={`${basename}-section-left-mid-sec1`}>
-          <div id={`${basename}-section-left-mid-sec1-row`}>
-            <span id={`${basename}-section-left-mid-sec1-row-title`}>
+      <div id={`${basenamePage}-section-left-mid`}>
+        <div id={`${basenamePage}-section-left-mid-sec1`}>
+          <div id={`${basenamePage}-section-left-mid-sec1-row`}>
+            <span id={`${basenamePage}-section-left-mid-sec1-row-title`}>
               {"País:"}
             </span>
-            <span id={`${basename}-section-left-mid-sec1-row-value`}>
+            <span id={`${basenamePage}-section-left-mid-sec1-row-value`}>
               {"Brazil"}
             </span>
           </div>
-          <div id={`${basename}-section-left-mid-sec1-row`}>
-            <span id={`${basename}-section-left-mid-sec1-row-title`}>
+          <div id={`${basenamePage}-section-left-mid-sec1-row`}>
+            <span id={`${basenamePage}-section-left-mid-sec1-row-title`}>
               {"Cidade:"}
             </span>
-            <span id={`${basename}-section-left-mid-sec1-row-value`}>
+            <span id={`${basenamePage}-section-left-mid-sec1-row-value`}>
               {"Juazeiro"}
             </span>
           </div>
-          <div id={`${basename}-section-left-mid-sec1-row`}>
-            <span id={`${basename}-section-left-mid-sec1-row-title`}>
+          <div id={`${basenamePage}-section-left-mid-sec1-row`}>
+            <span id={`${basenamePage}-section-left-mid-sec1-row-title`}>
               {"Idade:"}
             </span>
-            <span id={`${basename}-section-left-mid-sec1-row-value`}>
+            <span id={`${basenamePage}-section-left-mid-sec1-row-value`}>
               {"25"}
             </span>
           </div>
         </div>
-        <div id={`${basename}-section-left-mid-sec2`}>
-          <div id={`${basename}-section-left-mid-sec2-row`}>
-            <div id={`${basename}-bar-progress-circle`}>
+        <div id={`${basenamePage}-section-left-mid-sec2`}>
+          <div id={`${basenamePage}-section-left-mid-sec2-row`}>
+            <div id={`${basenamePage}-bar-progress-circle`}>
               <CircularProgressbar
                 value={state.language[0]}
                 maxValue={1}
@@ -119,7 +119,7 @@ const Profile = ({ basename, setPage, size }) => {
               />
               <span>{"Português"}</span>
             </div>
-            <div id={`${basename}-bar-progress-circle`}>
+            <div id={`${basenamePage}-bar-progress-circle`}>
               <CircularProgressbar
                 value={state.language[1]}
                 maxValue={1}
@@ -143,7 +143,7 @@ const Profile = ({ basename, setPage, size }) => {
               />
               <span>{"English"}</span>
             </div>
-            <div id={`${basename}-bar-progress-circle`}>
+            <div id={`${basenamePage}-bar-progress-circle`}>
               <CircularProgressbar
                 value={state.language[2]}
                 maxValue={1}
@@ -169,50 +169,50 @@ const Profile = ({ basename, setPage, size }) => {
             </div>
           </div>
         </div>
-        <div id={`${basename}-section-left-mid-sec3`}>
+        <div id={`${basenamePage}-section-left-mid-sec3`}>
           <TechPercent
-            idname={`${basename}-section-left-mid-sec3-row`}
+            idname={`${basenamePage}-section-left-mid-sec3-row`}
             tech={"JavaScript"}
             percent={state.percents[0]}
           />
           <TechPercent
-            idname={`${basename}-section-left-mid-sec3-row`}
+            idname={`${basenamePage}-section-left-mid-sec3-row`}
             tech={"Python"}
             percent={state.percents[1]}
           />
           <TechPercent
-            idname={`${basename}-section-left-mid-sec3-row`}
+            idname={`${basenamePage}-section-left-mid-sec3-row`}
             tech={"AWS"}
             percent={state.percents[2]}
           />
           <TechPercent
-            idname={`${basename}-section-left-mid-sec3-row`}
+            idname={`${basenamePage}-section-left-mid-sec3-row`}
             tech={"Automação"}
             percent={state.percents[3]}
           />
         </div>
-        <div id={`${basename}-section-left-mid-sec4`}>
-          <div id={`${basename}-section-left-mid-sec4-button`}>
+        <div id={`${basenamePage}-section-left-mid-sec4`}>
+          <div id={`${basenamePage}-section-left-mid-sec4-button`}>
             <a
-              id={`${basename}-button-download`}
+              id={`${basenamePage}-button-download`}
               href={home.cv}
               download="lucas-curriculo.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span>{"DOWNLOAD CV"}</span>
-              <MdDownload id={`${basename}-button-download-icon`} />
+              <MdDownload id={`${basenamePage}-button-download-icon`} />
             </a>
           </div>
         </div>
       </div>
-      <div id={`${basename}-section-left-bot`}>
-        <div id={`${basename}-section-left-bot-items`}>
+      <div id={`${basenamePage}-section-left-bot`}>
+        <div id={`${basenamePage}-section-left-bot-items`}>
           {home.socials.length > 0 &&
             home.socials.map((item, index) => {
               return (
                 <SocialIcon
-                  className={`${basename}-section-left-bot-items-icon`}
+                  className={`${basenamePage}-section-left-bot-items-icon`}
                   key={`social-media-${index}`}
                   url={item}
                   target="_blank"

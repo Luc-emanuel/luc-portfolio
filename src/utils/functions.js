@@ -45,19 +45,19 @@ const getValue = (obj, property) => {
   return value;
 };
 
-export const tesF = (basename, trigger) => {
+export const tesF = (basenamePage, trigger) => {
   if (trigger === undefined) {
-    let doc = getElement("id", `${basename}-section-mid`);
+    let doc = getElement("id", `${basenamePage}-section-mid`);
     if (doc !== null) {
       doc.style["width"] = `${window.innerWidth * 0.8}px`;
     }
   } else {
     window.addEventListener(trigger, (e) => {
-      let doc = getElement("id", `${basename}-sections`);
+      let doc = getElement("id", `${basenamePage}-sections`);
       if (doc !== null) {
         let width = getValue(doc, "width");
         //
-        let docAlvo = getElement("id", `${basename}-section-mid`);
+        let docAlvo = getElement("id", `${basenamePage}-section-mid`);
         if (docAlvo !== null) {
           docAlvo.style["width"] = `${width - 380}px`;
         }

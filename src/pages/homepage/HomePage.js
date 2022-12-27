@@ -17,15 +17,17 @@ const HomePage = () => {
   //
   const renderComponent = () => {
     let Component;
-    let basename;
+    let basenamePage;
     for (let index in pages) {
       if (pages[index].indice === page) {
         Component = pages[index].component;
-        basename = pages[index].basename;
+        basenamePage = pages[index].basenamePage;
         break;
       }
     }
-    return <Component basename={basename} setPage={setPage} size={size} />;
+    return (
+      <Component basenamePage={basenamePage} setPage={setPage} size={size} />
+    );
   };
   //
   return <div className="pageSetting">{renderComponent()}</div>;
