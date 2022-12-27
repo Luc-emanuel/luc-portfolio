@@ -17,35 +17,30 @@ const HomePage = () => {
   //
   console.log(size, page);
   //
-  /*
   const renderComponent = () => {
-    let Component;
-    let basenamePage;
-    for (let index in pages) {
-      if (pages[index].indice === page) {
-        Component = pages[index].component;
-        basenamePage = pages[index].basenamePage;
-        break;
+    if (page) {
+      let Component;
+      let basenamePage;
+      for (let index in pages) {
+        if (pages[index].indice === page) {
+          Component = pages[index].component;
+          basenamePage = pages[index].basenamePage;
+          break;
+        }
       }
+      return (
+        <Component basenamePage={basenamePage} setPage={setPage} size={size} />
+      );
+    } else {
+      return (
+        <span style={{ fontSize: "30px", color: "#ff0000", fontWeight: "600" }}>
+          {"ERROR"}
+        </span>
+      );
     }
-    return (
-      <Component basenamePage={basenamePage} setPage={setPage} size={size} />
-    );
-  };*/
+  };
   //
-  return (
-    <div className="pageSetting">
-      <span
-        style={{
-          color: "#ff9900",
-          fontSize: "100px",
-          margin: "0 auto",
-        }}
-      >
-        {"TESTE"}
-      </span>
-    </div>
-  );
+  return <div className="pageSetting">{renderComponent()}</div>;
 };
 
 export default HomePage;
