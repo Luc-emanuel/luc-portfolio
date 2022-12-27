@@ -4,7 +4,6 @@ import { pages } from "../pages";
 import { hookSize, updateHookSize } from "../../utils/functions";
 
 const HomePage = () => {
-  /*
   const [page, setPageNumber] = useState(
     localStorage.page ? Number(localStorage.page) : 1
   );
@@ -16,9 +15,9 @@ const HomePage = () => {
   const [size, setSize] = useState(hookSize());
   updateHookSize(setSize);
   //
-  console.log(size);
+  console.log(size, page);
   //
-  
+  /*
   const renderComponent = () => {
     let Component;
     let basenamePage;
