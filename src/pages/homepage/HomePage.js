@@ -5,7 +5,11 @@ import { hookSize, updateHookSize } from "../../utils/functions";
 
 const HomePage = () => {
   const [page, setPageNumber] = useState(
-    localStorage.page ? Number(localStorage.page) : 1
+    localStorage.page
+      ? Number(localStorage.page) === 0
+        ? 1
+        : Number(localStorage.page)
+      : 1
   );
   //
   const setPage = (number) => {
@@ -32,11 +36,7 @@ const HomePage = () => {
         <Component basenamePage={basenamePage} setPage={setPage} size={size} />
       );
     } else {
-      return (
-        <span style={{ fontSize: "30px", color: "#ff0000", fontWeight: "600" }}>
-          {"ERROR"}
-        </span>
-      );
+      return <></>;
     }
   };
   //
