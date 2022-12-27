@@ -215,7 +215,6 @@ const Profile = ({ basename, setPage, size }) => {
                   key={`social-media-${index}`}
                   url={item}
                   target="_blank"
-                  rel="noopener noreferrer"
                   bgColor="#ff9900"
                 />
               );
