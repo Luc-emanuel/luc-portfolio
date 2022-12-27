@@ -198,6 +198,7 @@ const Profile = ({ basename, setPage, size }) => {
               href={home.cv}
               download="lucas-curriculo.pdf"
               target="_blank"
+              rel="noreferrer"
             >
               <span>{"DOWNLOAD CV"}</span>
               <MdDownload id={`${basename}-button-download-icon`} />
@@ -215,6 +216,7 @@ const Profile = ({ basename, setPage, size }) => {
                   key={`social-media-${index}`}
                   url={item}
                   target="_blank"
+                  rel="noreferrer"
                   bgColor="#ff9900"
                 />
               );
