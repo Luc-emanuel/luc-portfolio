@@ -1,4 +1,6 @@
 //
+import React from "react";
+
 const TechPercent = ({ idname, tech, percent }) => {
   return (
     <div id={idname}>

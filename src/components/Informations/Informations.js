@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import "./index.css";
 import AnimationText from "../AnimationText/AnimationText";
 import imageBackground from "../../assets/images/amazing_panoramic.jpg";

@@ -1,5 +1,6 @@
 import "./index.css";
 import { MdMenu } from "react-icons/md";
+import React from "react";
 
 const Menu = ({ basename, setPage, open, setOpen, size }) => {
   return (

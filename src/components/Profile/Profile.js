@@ -3,7 +3,7 @@ import { home } from "../../utils/constants";
 import { SocialIcon } from "react-social-icons";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import TechPercent from "../../components/TechPercent/TechPercent";
 import { MdDownload } from "react-icons/md";
 
@@ -12,7 +12,7 @@ const Profile = ({ basename, setPage, size }) => {
     percents: [0, 0, 0, 0],
     language: [0, 0, 0],
   });
-  const [init, setInit] = useState(new Date());
+  const [init] = useState(new Date());
   const [load, setLoad] = useState(false);
   //
   useEffect(() => {
@@ -198,7 +198,7 @@ const Profile = ({ basename, setPage, size }) => {
               href={home.cv}
               download="lucas-curriculo.pdf"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <span>{"DOWNLOAD CV"}</span>
               <MdDownload id={`${basename}-button-download-icon`} />
@@ -216,7 +216,7 @@ const Profile = ({ basename, setPage, size }) => {
                   key={`social-media-${index}`}
                   url={item}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   bgColor="#ff9900"
                 />
               );

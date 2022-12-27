@@ -1,6 +1,6 @@
 import "./index.css";
 import { tesF } from "../../utils/functions";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Profile from "../../components/Profile/Profile";
 import Informations from "../../components/Informations/Informations";
