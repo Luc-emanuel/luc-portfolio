@@ -19,12 +19,14 @@ const HomePage = () => {
   }, []);
   //
   const setPage = (number) => {
-    localStorage.setItem("page", number);
-    setAnimate(true);
-    setPageNumber(number);
-    setTimeout(() => {
-      setAnimate(false);
-    }, 1000);
+    if (number !== page) {
+      localStorage.setItem("page", number);
+      setAnimate(true);
+      setPageNumber(number);
+      setTimeout(() => {
+        setAnimate(false);
+      }, 1000);
+    }
   };
   const [size, setSize] = useState(hookSize());
   updateHookSize(setSize);
