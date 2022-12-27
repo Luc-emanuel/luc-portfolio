@@ -1,34 +1,34 @@
 import "./index.css";
-import CardHome from "../../components/Cards/CardHome/CardHome";
-import { hookSize } from "../../utils/functions";
-import AboutPage from "../about/AboutPage";
-import ProjectsPage from "../projects/ProjectsPage";
 import { useState } from "react";
+import { pages } from "../pages";
+import { hookSize, updateHookSize } from "../../utils/functions";
 
 const HomePage = () => {
   const [page, setPageNumber] = useState(
-    localStorage.page ? Number(localStorage.page) : 0
+    localStorage.page ? Number(localStorage.page) : 1
   );
   //
   const setPage = (number) => {
     localStorage.setItem("page", number);
     setPageNumber(number);
   };
+  const [size, setSize] = useState(hookSize());
+  updateHookSize(setSize);
   //
-  const size = hookSize();
-  return (
-    <div className="pageSetting notSelect">
-      {page === 0 ? (
-        <div className="mid">
-          <CardHome id="person" size={size} setPage={setPage} />
-        </div>
-      ) : page === 1 ? (
-        <AboutPage setPage={setPage} />
-      ) : (
-        <ProjectsPage setPage={setPage} />
-      )}
-    </div>
-  );
+  const renderComponent = () => {
+    let Component;
+    let basename;
+    for (let index in pages) {
+      if (pages[index].indice === page) {
+        Component = pages[index].component;
+        basename = pages[index].basename;
+        break;
+      }
+    }
+    return <Component basename={basename} setPage={setPage} size={size} />;
+  };
+  //
+  return <div className="pageSetting">{renderComponent()}</div>;
 };
 
 export default HomePage;

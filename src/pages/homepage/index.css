@@ -16,13 +16,5 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.mid {
-  width: 90%;
-  height: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  background-color: #191919;
 }
