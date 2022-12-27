@@ -1,7 +1,7 @@
 import "./index.css";
-import React, { useState } from "react";
-import { pages } from "../pages";
+import React, { useEffect, useState } from "react";
 import { hookSize, updateHookSize } from "../../utils/functions";
+import Base from "../base/Base";
 
 const HomePage = () => {
   const [page, setPageNumber] = useState(
@@ -11,27 +11,28 @@ const HomePage = () => {
         : Number(localStorage.page)
       : 1
   );
+  const [animate, setAnimate] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimate(false);
+    }, 1000);
+  }, []);
   //
   const setPage = (number) => {
     localStorage.setItem("page", number);
+    setAnimate(true);
     setPageNumber(number);
+    setTimeout(() => {
+      setAnimate(false);
+    }, 1000);
   };
   const [size, setSize] = useState(hookSize());
   updateHookSize(setSize);
   //
   const renderComponent = () => {
     if (page) {
-      let Component;
-      let basenamePage;
-      for (let index in pages) {
-        if (pages[index].indice === page) {
-          Component = pages[index].component;
-          basenamePage = pages[index].basenamePage;
-          break;
-        }
-      }
       return (
-        <Component basenamePage={basenamePage} setPage={setPage} size={size} />
+        <Base setPage={setPage} page={page} size={size} animate={animate} />
       );
     } else {
       return <></>;

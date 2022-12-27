@@ -4,8 +4,8 @@ export const hookSize = () => {
     xs: 400,
     sm: 600,
     md: 700,
-    lg: 1300,
-    xl: 1500,
+    lg: 1200,
+    xl: 1450,
   };
   const width = window.innerWidth;
   let resp = "xs";
@@ -48,8 +48,10 @@ const getValue = (obj, property) => {
 export const tesF = (basenamePage, trigger) => {
   if (trigger === undefined) {
     let doc = getElement("id", `${basenamePage}-section-mid`);
+    let doc2 = getElement("id", "transition-section-mid");
     if (doc !== null) {
       doc.style["width"] = `${window.innerWidth * 0.8}px`;
+      doc2.style["width"] = `${window.innerWidth * 0.8}px`;
     }
   } else {
     window.addEventListener(trigger, (e) => {
@@ -58,8 +60,10 @@ export const tesF = (basenamePage, trigger) => {
         let width = getValue(doc, "width");
         //
         let docAlvo = getElement("id", `${basenamePage}-section-mid`);
+        let docAlvo2 = getElement("id", "transition-section-mid");
         if (docAlvo !== null) {
           docAlvo.style["width"] = `${width - 380}px`;
+          docAlvo2.style["width"] = `${width - 380}px`;
         }
       }
     });

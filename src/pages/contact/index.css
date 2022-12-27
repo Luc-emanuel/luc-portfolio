@@ -1,0 +1,118 @@
+div#contact-section-mid {
+  position: relative;
+  height: 100%;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/*
+*
+*
+*
+*
+SECTION TOP
+*
+*
+*
+*/
+
+div#contact-section-mid-top {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div#contact-section-mid-top-box {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent /*#303030*/;
+  margin: 0 auto;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/*
+*
+*
+*
+*
+SECTION MID
+*
+*
+*
+*/
+
+div#contact-section-mid-mid {
+  position: relative;
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#contact-section-mid-mid-box {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: transparent /*#303030*/;
+}
+
+/*
+*
+*
+*
+*
+SECTION BOT
+*
+*
+*
+*/
+
+div#contact-section-mid-bot {
+  position: relative;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div#contact-section-mid-bot-box {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+div#contact-section-mid-bot-text {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div#contact-section-mid-bot-text span {
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  text-indent: 15px;
+}

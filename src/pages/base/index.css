@@ -1,0 +1,9 @@
+div#base-sections {
+  position: relative;
+  width: 80%;
+  height: 96%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -2,12 +2,18 @@ import "./index.css";
 import { MdMenu } from "react-icons/md";
 import React from "react";
 
-const Menu = ({ basenamePage, setPage, open, setOpen, size }) => {
+const Menu = ({ basenamePage, setPage, page, open, setOpen, size }) => {
   return (
     <div
       id={`${basenamePage}-section-right`}
       style={
-        open ? { minWidth: "140px", width: "140px", maxWidth: "140px" } : {}
+        open
+          ? {
+              minWidth: size === "xl" ? "200px" : "140px",
+              width: size === "xl" ? "200px" : "140px",
+              maxWidth: size === "xl" ? "200px" : "140px",
+            }
+          : {}
       }
     >
       <div id={`${basenamePage}-section-right-top`}>
@@ -25,7 +31,14 @@ const Menu = ({ basenamePage, setPage, open, setOpen, size }) => {
           id={`${basenamePage}-section-right-mid-items`}
         >
           <span
-            style={{ opacity: open ? "1" : "0" }}
+            style={
+              page === 1
+                ? {
+                    opacity: open ? "1" : "0",
+                    color: "#ff9900",
+                  }
+                : { opacity: open ? "1" : "0" }
+            }
             onClick={() => {
               setPage(1);
             }}
@@ -33,25 +46,46 @@ const Menu = ({ basenamePage, setPage, open, setOpen, size }) => {
             {"INICIO"}
           </span>
           <span
-            style={{ opacity: open ? "1" : "0" }}
+            style={
+              page === 2
+                ? {
+                    opacity: open ? "1" : "0",
+                    color: "#ff9900",
+                  }
+                : { opacity: open ? "1" : "0" }
+            }
             onClick={() => {
-              //setPage(3);
+              setPage(2);
             }}
           >
             {"PORTFÓLIO"}
           </span>
           <span
-            style={{ opacity: open ? "1" : "0" }}
+            style={
+              page === 3
+                ? {
+                    opacity: open ? "1" : "0",
+                    color: "#ff9900",
+                  }
+                : { opacity: open ? "1" : "0" }
+            }
             onClick={() => {
-              //setPage(2);
+              setPage(3);
             }}
           >
             {"HISTÓRIA"}
           </span>
           <span
-            style={{ opacity: open ? "1" : "0" }}
+            style={
+              page === 4
+                ? {
+                    opacity: open ? "1" : "0",
+                    color: "#ff9900",
+                  }
+                : { opacity: open ? "1" : "0" }
+            }
             onClick={() => {
-              //setPage(1);
+              setPage(4);
             }}
           >
             {"CONTATO"}
