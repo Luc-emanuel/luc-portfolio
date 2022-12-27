@@ -15,6 +15,8 @@ const HomePage = () => {
   const [size, setSize] = useState(hookSize());
   updateHookSize(setSize);
   //
+  console.log(size);
+  //
   const renderComponent = () => {
     let Component;
     let basenamePage;
