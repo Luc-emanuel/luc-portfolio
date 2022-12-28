@@ -61,7 +61,14 @@ const Profile = ({ basenamePage, setPage, size }) => {
           />
         </div>
         <div id={`${basenamePage}-section-left-top-desc`}>
-          <span id={`${basenamePage}-name`}>{home.name}</span>
+          <span
+            onClick={() => {
+              setPage(1);
+            }}
+            id={`${basenamePage}-name`}
+          >
+            {home.name}
+          </span>
           <span id={`${basenamePage}-oficio`}>{home.oficio}</span>
           <span id={`${basenamePage}-study`}>{home.study}</span>
         </div>

@@ -1,4 +1,28 @@
 //
+export const checkemail = (a) => {
+  try {
+    if (a.includes(" ")) {
+      return false;
+    }
+    var c = a.split("@");
+    var d1 = c[0].length > 0;
+    if (c[1].includes(".")) {
+      var c2 = c[1].split(".");
+      var d2 = c2[0].length > 0;
+      var d3 = c2[1].length >= 2;
+      if (d1 === true && d2 === true && d3 === true) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  } catch {
+    return false;
+  }
+};
+
 export const hookSize = () => {
   const breakpoints = {
     xs: 400,
