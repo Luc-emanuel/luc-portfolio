@@ -13,6 +13,7 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
   });
   const [send, setSend] = useState(false);
   const [status, setStatus] = useState(false);
+  const [msgStatus, setMsgStatus] = useState("");
   //
   useEffect(() => {
     const check = () => {
@@ -38,14 +39,20 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
   };
   //
   const sendMensagem = async () => {
-    let result = await Axios.post("/mensagens/create", {
+    let result = await Axios.post("/create", {
       nome: form.name,
       email: form.email,
       msg: form.message,
     });
     let data = result?.data;
-    if (data._res === "ok") {
+    if (data._res) {
       setStatus(true);
+      if (data._res === "ok") {
+        setMsgStatus("Mensagem enviada com sucesso!");
+      }
+      if (data._res === "error") {
+        setMsgStatus("Erro ao enviar a mensagem!");
+      }
       setTimeout(() => {
         setStatus(false);
       }, 2000);
@@ -194,7 +201,7 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
               </div>
               {status === true && (
                 <div id={`${basenamePage}-form-res-status`}>
-                  <span>{"Mensagem enviada com sucesso!"}</span>
+                  <span>{msgStatus}</span>
                 </div>
               )}
             </div>

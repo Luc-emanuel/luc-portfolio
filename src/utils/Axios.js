@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://my-api-mensagens.herokuapp.com",
+  baseURL: "https://luc-apis.herokuapp.com/api_mensagens",
   responseType: "json",
 });
