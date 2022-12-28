@@ -128,7 +128,12 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
             <span>{"Entrar em contato"}</span>
           </div>
           <div id={`${basenamePage}-section-mid-mid-box-line2`}>
-            <div id={`${basenamePage}-form-name`}>
+            <div
+              style={
+                size === "xl" ? {} : size === "lg" ? { height: "25px" } : {}
+              }
+              id={`${basenamePage}-form-name`}
+            >
               <input
                 onChange={(e) => handleForm(e)}
                 value={form.name}
@@ -137,7 +142,12 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
                 id={`${basenamePage}-form-name-input`}
               />
             </div>
-            <div id={`${basenamePage}-form-email`}>
+            <div
+              style={
+                size === "xl" ? {} : size === "lg" ? { height: "25px" } : {}
+              }
+              id={`${basenamePage}-form-email`}
+            >
               <input
                 onChange={(e) => handleForm(e)}
                 value={form.email}
@@ -146,7 +156,12 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
                 id={`${basenamePage}-form-email-input`}
               />
             </div>
-            <div id={`${basenamePage}-form-message`}>
+            <div
+              style={
+                size === "xl" ? {} : size === "lg" ? { height: "120px" } : {}
+              }
+              id={`${basenamePage}-form-message`}
+            >
               <textarea
                 onChange={(e) => handleForm(e)}
                 value={form.message}
@@ -155,7 +170,12 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
                 id={`${basenamePage}-form-message-input`}
               ></textarea>
             </div>
-            <div id={`${basenamePage}-form-button`}>
+            <div
+              style={
+                size === "xl" ? {} : size === "lg" ? { height: "45px" } : {}
+              }
+              id={`${basenamePage}-form-button`}
+            >
               <div
                 onClick={() => {
                   if (send) {

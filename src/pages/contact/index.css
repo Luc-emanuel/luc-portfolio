@@ -247,6 +247,7 @@ textarea#contact-form-message-input {
   color: #fff;
   font-family: "Poppins";
   padding: 11px;
+  resize: none;
 }
 
 /*
