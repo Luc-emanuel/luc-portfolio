@@ -13,6 +13,7 @@ export const home = {
   socials: [
     "https://www.linkedin.com/in/lucas-ribeiro-2ba4101a2/",
     "https://github.com/Luc-emanuel",
+    "https://www.instagram.com/lucasr01123/",
   ],
   cv: "../../utils/curriculo",
   skills: [
@@ -59,6 +60,114 @@ export const infoContacts = [
     { title: "Celular", value: "(74) 9 8118-6884" },
   ],
 ];
+
+export const infoHistory = {
+  education: [
+    {
+      title: "Universidade do Estado da Bahia",
+      subtitle: "Bacharelado",
+      date: "Março 2019 - presente",
+      points: [
+        "Guiando minha graduação com foco em genética",
+        "Ajudando outros alunos com seus estudos",
+        "Desenvolvendo ideias na área de biotecnologia",
+      ],
+      techs: [],
+    },
+  ],
+  work: [
+    {
+      title: "Freelancer - Autônomo",
+      subtitle: "Desenvolvedor Full Stack",
+      date: "Dezembro 2022 - presente",
+      points: [
+        "Desenvolvimento de aplicações web e mobile",
+        "Projetos de back-end e front-end",
+        "Melhorias em aplicações já existentes",
+        "Soluções personalizadas",
+      ],
+      techs: [
+        "Python",
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "MongoDB",
+        "MySQL",
+        "AWS",
+        "Jest",
+        "Docker",
+        "Git",
+        "Scrum",
+      ],
+    },
+    {
+      title: "Reload Health",
+      subtitle: "Desenvolvedor Front-end",
+      date: "Julho 2022 - Dezembro 2022",
+      points: [
+        "Desenvolvendo aplicações front-end",
+        "Otimizando performance geral nas páginas",
+        "Reestruturação do código para melhor manutenção",
+      ],
+      techs: [
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "Styled Components",
+        "Docker",
+        "Git",
+        "Scrum",
+      ],
+    },
+    {
+      title: "TakaTraining",
+      subtitle: "Desenvolvedor Front-end",
+      date: "Dezembro 2020 - Abril 2022",
+      points: [
+        "Desenvolvimento de aplicações web e mobile",
+        "Refatoração de sites",
+        "Otimização",
+        "Aplicações PowerApps",
+      ],
+      techs: [
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "PowerApps",
+        "AWS",
+        "Azure",
+        "Jest",
+        "Git",
+        "Scrum",
+      ],
+    },
+    {
+      title: "Freelancer - ClassX",
+      subtitle: "Desenvolvedor Full Stack",
+      date: "Fevereiro 2019 - Dezembro 2020",
+      points: [
+        "Desenvolvimento de aplicações web e mobile",
+        "Projetos de back-end e front-end",
+        "Melhorias em aplicações já existentes",
+        "Soluções personalizadas",
+      ],
+      techs: [
+        "Python",
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "PHP",
+        "Laravel",
+        "MongoDB",
+        "MySQL",
+        "AWS",
+        "Jest",
+        "Git",
+        "Scrum",
+      ],
+    },
+  ],
+};
 
 /*
 export const projects = [

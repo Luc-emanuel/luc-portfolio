@@ -21,7 +21,7 @@ SECTION TOP
 div#history-section-mid-top {
   position: relative;
   width: 100%;
-  height: 40%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,44 +30,11 @@ div#history-section-mid-top {
 div#history-section-mid-top-box {
   position: relative;
   width: 95%;
-  height: 100%;
+  height: 97%;
   display: flex;
-  flex-direction: column;
-  background-color: transparent /*#303030*/;
+  flex-direction: row;
   margin: 0 auto;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/*
-*
-*
-*
-*
-SECTION MID
-*
-*
-*
-*/
-
-div#history-section-mid-mid {
-  position: relative;
-  width: 100%;
-  height: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-div#history-section-mid-mid-box {
-  position: relative;
-  width: 95%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto;
-  background-color: transparent /*#303030*/;
 }
 
 /*

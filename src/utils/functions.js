@@ -29,7 +29,8 @@ export const hookSize = () => {
     sm: 600,
     md: 700,
     lg: 1200,
-    xl: 1450,
+    lx: 1400,
+    xl: 1650,
   };
   const width = window.innerWidth;
   let resp = "xs";

@@ -1,4 +1,6 @@
 import "./index.css";
+import { infoHistory } from "../../utils/constants";
+import CardsHistory from "../../components/CardsHistory/CardsHistory";
 
 const History = ({ basenamePage, setPage, size, open, animate }) => {
   return (
@@ -9,10 +11,18 @@ const History = ({ basenamePage, setPage, size, open, animate }) => {
       id={`${basenamePage}-section-mid`}
     >
       <div id={`${basenamePage}-section-mid-top`}>
-        <div id={`${basenamePage}-section-mid-top-box`}></div>
-      </div>
-      <div id={`${basenamePage}-section-mid-mid`}>
-        <div id={`${basenamePage}-section-mid-mid-box`}></div>
+        <div id={`${basenamePage}-section-mid-top-box`}>
+          <CardsHistory
+            pageName={basenamePage}
+            title="Educação"
+            array={infoHistory.education}
+          />
+          <CardsHistory
+            pageName={basenamePage}
+            title="Trabalhos"
+            array={infoHistory.work}
+          />
+        </div>
       </div>
       <div id={`${basenamePage}-section-mid-bot`}>
         <div id={`${basenamePage}-section-mid-bot-box`}>

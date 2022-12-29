@@ -137,7 +137,11 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
           <div id={`${basenamePage}-section-mid-mid-box-line2`}>
             <div
               style={
-                size === "xl" ? {} : size === "lg" ? { height: "25px" } : {}
+                size === "xl"
+                  ? {}
+                  : size === "lg" || size === "lx"
+                  ? { height: "25px" }
+                  : {}
               }
               id={`${basenamePage}-form-name`}
             >
@@ -151,7 +155,11 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
             </div>
             <div
               style={
-                size === "xl" ? {} : size === "lg" ? { height: "25px" } : {}
+                size === "xl"
+                  ? {}
+                  : size === "lg" || size === "lx"
+                  ? { height: "25px" }
+                  : {}
               }
               id={`${basenamePage}-form-email`}
             >
@@ -165,7 +173,11 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
             </div>
             <div
               style={
-                size === "xl" ? {} : size === "lg" ? { height: "120px" } : {}
+                size === "xl"
+                  ? {}
+                  : size === "lg" || size === "lx"
+                  ? { height: "120px" }
+                  : {}
               }
               id={`${basenamePage}-form-message`}
             >
@@ -179,7 +191,11 @@ const Contact = ({ basenamePage, setPage, size, open, animate }) => {
             </div>
             <div
               style={
-                size === "xl" ? {} : size === "lg" ? { height: "45px" } : {}
+                size === "xl"
+                  ? {}
+                  : size === "lg" || size === "lx"
+                  ? { height: "45px" }
+                  : {}
               }
               id={`${basenamePage}-form-button`}
             >

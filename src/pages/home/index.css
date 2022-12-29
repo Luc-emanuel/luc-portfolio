@@ -141,7 +141,7 @@ div#home-section-mid-mid-line1 {
 
 div#home-section-mid-mid-line1-items {
   position: relative;
-  width: 24%;
+  width: 220px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -162,7 +162,6 @@ span#home-section-mid-mid-line1-items-text-value {
   font-size: 18px;
   font-weight: 600;
   color: #ff9900;
-  text-indent: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,7 +193,7 @@ div#home-section-mid-mid-line2 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   overflow: hidden;
 }
 

@@ -18,3 +18,11 @@
   justify-content: center;
   background-color: #191919;
 }
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -25,7 +25,15 @@ const Base = ({ setPage, page, size, animate }) => {
     return (
       <div
         id={`base-sections`}
-        style={size === "xl" ? {} : size === "lg" ? { width: "96%" } : {}}
+        style={
+          size === "xl"
+            ? {}
+            : size === "lg"
+            ? { width: "96%" }
+            : size === "lx"
+            ? { width: "90%" }
+            : {}
+        }
       >
         <Profile basenamePage={"base"} setPage={setPage} size={size} />
 
