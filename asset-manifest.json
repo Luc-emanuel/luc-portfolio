@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/luc-portfolio/static/css/main.233ab417.css",
-    "main.js": "/luc-portfolio/static/js/main.aa31866b.js",
+    "main.js": "/luc-portfolio/static/js/main.8c967297.js",
     "static/media/amazing_panoramic.jpg": "/luc-portfolio/static/media/amazing_panoramic.26f3b6a37584edf76fcb.jpg",
     "static/media/me.jpg": "/luc-portfolio/static/media/me.0e97a9827b511943418b.jpg",
     "index.html": "/luc-portfolio/index.html",
     "main.233ab417.css.map": "/luc-portfolio/static/css/main.233ab417.css.map",
-    "main.aa31866b.js.map": "/luc-portfolio/static/js/main.aa31866b.js.map"
+    "main.8c967297.js.map": "/luc-portfolio/static/js/main.8c967297.js.map"
   },
   "entrypoints": [
     "static/css/main.233ab417.css",
-    "static/js/main.aa31866b.js"
+    "static/js/main.8c967297.js"
   ]
 }
