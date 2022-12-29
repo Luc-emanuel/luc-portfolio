@@ -37,7 +37,7 @@ const Home = ({ basenamePage, setPage, size, open, animate }) => {
                 <AnimationText
                   stringsArray={[
                     "Eu faço tudo com Python.",
-                    "Eu faço JavaScript games.",
+                    "Eu faço games com JavaScript",
                     "Eu faço RESP APIs.",
                     "Eu faço Websites.",
                     "Eu faço Mobile Apps.",
