@@ -194,18 +194,3 @@ export const projects = [
   },
 ];
 */
-
-export const curriculo = {
-  name: "Lucas Emanuel Da Silva Ribeiro",
-  oficio: "Desenvolvedor Full Stack",
-  socials: [
-    { title: "Email", value: "lucasemanuel-00000@hotmail.com", link: false },
-    { title: "Celular", value: "(74) 9 8118-6884", link: false },
-    {
-      title: "LinkedIn",
-      value: "https://www.linkedin.com/in/lucas-ribeiro-2ba4101a2/",
-      link: true,
-    },
-    { title: "Github", value: "https://github.com/Luc-emanuel", link: true },
-  ],
-};
