@@ -94,3 +94,18 @@ export const tesF = (basenamePage, trigger) => {
     });
   }
 };
+
+export const getValueLocal = (key) => {
+  if (key === "page") {
+    let value = localStorage[key]
+      ? Number(localStorage[key]) === 0
+        ? 1
+        : Number(localStorage[key])
+      : 1;
+    return value;
+  }
+  if (key === "project") {
+    let value = localStorage[key] ? JSON.parse(localStorage[key]) : null;
+    return value;
+  }
+};

@@ -1,8 +1,19 @@
 //
 import Home from "../pages/home/Home";
-import Portfolio from "../pages/portfolio/Portfolio";
+import Project from "../pages/project/Project";
 import History from "../pages/history/History";
 import Contact from "../pages/contact/Contact";
+
+/*
+
+pages
+
+1 = home
+2 = portfolio
+3 = history
+4 = contact
+
+*/
 
 export const pages = [
   {
@@ -10,8 +21,8 @@ export const pages = [
     component: Home,
   },
   {
-    basenamePage: "portfolio",
-    component: Portfolio,
+    basenamePage: "project",
+    component: Project,
   },
   {
     basenamePage: "history",

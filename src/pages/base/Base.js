@@ -7,7 +7,7 @@ import Profile from "../../components/Profile/Profile";
 import Menu from "../../components/Menu/Menu";
 import Transition from "../../components/Transition/Transition";
 
-const Base = ({ setPage, page, size, animate }) => {
+const Base = ({ setPage, page, size, animate, project }) => {
   //
   const [basenamePage, setBaseName] = useState(pages[page - 1].basenamePage);
   const [open, setOpen] = useState(false);
@@ -44,6 +44,7 @@ const Base = ({ setPage, page, size, animate }) => {
           size={size}
           open={open}
           animate={animate}
+          project={project}
         />
 
         <Menu
@@ -53,6 +54,7 @@ const Base = ({ setPage, page, size, animate }) => {
           open={open}
           setOpen={setOpen}
           size={size}
+          project={project}
         />
       </div>
     );

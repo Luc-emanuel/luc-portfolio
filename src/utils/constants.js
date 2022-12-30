@@ -1,8 +1,13 @@
 //
 import imageMe from "../assets/images/me.jpg";
-//import imageGea from "../assets/images/projects/gea.png";
-//import imageYNPR from "../assets/images/projects/ynpr.png";
-//import imageAPI from "../assets/images/projects/api.png";
+import curriculo from "../assets/documents/curriculo.pdf";
+import gea1 from "../assets/images/projects/gea/img1.png";
+import gea2 from "../assets/images/projects/gea/img2.png";
+import ynpr1 from "../assets/images/projects/ynpr/img1.png";
+import ynpr2 from "../assets/images/projects/ynpr/img2.png";
+import ynpr3 from "../assets/images/projects/ynpr/img3.png";
+import ynpr4 from "../assets/images/projects/ynpr/img4.png";
+import relds1 from "../assets/images/projects/relds/img1.png";
 
 export const home = {
   image: imageMe,
@@ -15,7 +20,7 @@ export const home = {
     "https://github.com/Luc-emanuel",
     "https://www.instagram.com/lucasr01123/",
   ],
-  cv: "../../utils/curriculo",
+  cv: curriculo,
   skills: [
     {
       title: "Python",
@@ -169,28 +174,56 @@ export const infoHistory = {
   ],
 };
 
-/*
 export const projects = [
   {
-    name: "RELDS - API",
-    desc: "API de scraping de produtos",
+    id: 0,
+    title: "RELDS - API",
+    subtitle: "APIs",
+    desc: "Uma vez presenciei algo intrigante, as lojas flutando o preço em poucos minutos para se passar por promoção, tudo bem, nao é errado. Só que eu queria ter algo meu que me mostra-se que os preços estão bons mesmo ou não, pegando todas as flutuações e listando pra mim. Assim fiz a base de uma API de scrap na Kabum (o driver de outras lojas estão em desenvolvimento), funcionando bem. O projeto funciona muito bem, me retornando os preços e salvando num banco de dados, onde posso fazer o que quiser com eles. Um front que exiba isso por exemplo.",
+    details: [
+      { title: "Início", value: "Junho 2022" },
+      { title: "Fim", value: "--" },
+      { title: "Status", value: "Em progresso" },
+    ],
+    technologies: ["Python", "MongoDB", "Git"],
     url: "https://github.com/Luc-emanuel/relds",
-    image: imageAPI,
-    back: "#00dddd",
+    imgs: [relds1],
   },
   {
-    name: "GEA Sistemas",
-    desc: "Sistema de gerenciamento para revendedores de maquinário utilizado em vacas leiteiras",
+    id: 1,
+    title: "GEA Sistemas",
+    subtitle: "Sistema de gerenciamento de orçamentos e revisões",
+    desc: "A GEA possui revendedores de seus produtos (bombas de leite, teteiras, etc..) que visitam fazendeiros e fazem seus orçamentos, isso tudo sendo no papel mesmo, onde era necessário apresentar diversas opções ao cliente por meio de papel. Então a ideia foi botar online esse sistema para gerar um orçamento e também o gerenciamento das manutenções/trocas períodicas. Assim foi desenvolvido um sistema online, onde o revendedor, estando na fazenda com uma conexão com internet acessa o sistema e pode fazer seus orçamentos tranquilamente, com todos os produtos a um clique, e podendo gerenciar as revisões, manutenções e trocas. O projeto foi 100% desenvolvido por mim, backend, frontend, design, banco de dados e cloud.",
+    details: [
+      { title: "Início", value: "Janeiro 2021" },
+      { title: "Fim", value: "Abril 2022" },
+      { title: "Status", value: "Concluído" },
+      { title: "Cliente", value: "GEA" },
+    ],
+    technologies: [
+      "JavaScript",
+      "ReactJS",
+      "NodeJS",
+      "MongoDB",
+      "JWT",
+      "Azure",
+      "Git",
+    ],
     url: "https://geasistemas.azurewebsites.net/",
-    image: imageGea,
-    back: "#000000",
+    imgs: [gea1, gea2],
   },
   {
-    name: "YNP rGame",
-    desc: "Jogo de clique rápido com alta penalização",
+    id: 2,
+    title: "YNP rGame",
+    subtitle: "Game em JavaScript",
+    desc: "Eu estava pensando em fazer um joguinho visualmente simples mas que tivesse uma pegada de competição para prender o pessoal ali com seus amigos, amigos amam competir. Dai fiz esse game, que basicamente consiste em após fazer a preparação você escolhe um número e clica nele, após isso os números ficam mudando e você tem que procurar clicar no número que você escolheu, quão mais rápido for, mais pontos, mas cuidado, a punição por clicar errado é hard.",
+    details: [
+      { title: "Início", value: "Novembro 2022" },
+      { title: "Fim", value: "Dezembro 2022" },
+      { title: "Status", value: "Concluído" },
+    ],
+    technologies: ["JavaScript", "ReactJS", "NodeJS", "Git"],
     url: "https://luc-emanuel.github.io/YNP-r/",
-    image: imageYNPR,
-    back: "#000000",
+    imgs: [ynpr1, ynpr2, ynpr3, ynpr4],
   },
 ];
-*/

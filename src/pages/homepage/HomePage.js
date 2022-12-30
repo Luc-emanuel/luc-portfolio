@@ -1,16 +1,12 @@
 import "./index.css";
 import React, { useEffect, useState } from "react";
-import { hookSize, updateHookSize } from "../../utils/functions";
+import { hookSize, updateHookSize, getValueLocal } from "../../utils/functions";
 import Base from "../base/Base";
+import { projects } from "../../utils/constants";
 
 const HomePage = () => {
-  const [page, setPageNumber] = useState(
-    localStorage.page
-      ? Number(localStorage.page) === 0
-        ? 1
-        : Number(localStorage.page)
-      : 1
-  );
+  const [page, setPageNumber] = useState(getValueLocal("page"));
+  const [project, setProject] = useState(getValueLocal("project"));
   const [animate, setAnimate] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -18,15 +14,31 @@ const HomePage = () => {
     }, 1000);
   }, []);
   //
-  const setPage = (number) => {
-    if (number !== page) {
-      localStorage.setItem("page", number);
-      setAnimate(true);
-      setPageNumber(number);
-      setTimeout(() => {
-        setAnimate(false);
-      }, 1000);
+  const setPage = (number, index) => {
+    if (number === 2 && index !== null && index !== undefined) {
+      if (typeof index === "number") {
+        if (index < projects.length) {
+          setProject(projects[index]);
+          localStorage.setItem("project", JSON.stringify(projects[index]));
+        } else {
+          setProject(null);
+        }
+      } else {
+        setProject(null);
+      }
+    } else {
+      setProject(null);
     }
+    if (number !== 2) {
+      setProject(null);
+    }
+    localStorage.setItem("page", number);
+    setProject(getValueLocal("project"));
+    setAnimate(true);
+    setPageNumber(number);
+    setTimeout(() => {
+      setAnimate(false);
+    }, 1000);
   };
   const [size, setSize] = useState(hookSize());
   updateHookSize(setSize);
@@ -34,7 +46,13 @@ const HomePage = () => {
   const renderComponent = () => {
     if (page) {
       return (
-        <Base setPage={setPage} page={page} size={size} animate={animate} />
+        <Base
+          setPage={setPage}
+          page={page}
+          size={size}
+          animate={animate}
+          project={project}
+        />
       );
     } else {
       return <></>;
