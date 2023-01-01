@@ -12,7 +12,7 @@ import reload1 from "../assets/images/projects/reload/img1.png";
 
 export const home = {
   image: imageMe,
-  name: "Lucas Ribeiro",
+  name: "Lucas Emanuel",
   oficio: "Software Developer",
   study: "Biotechnology Student",
   email: "lucasemanuel-00000@hotmail.com",

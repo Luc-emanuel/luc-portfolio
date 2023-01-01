@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "16.x"
-      - name: Build web-app
+      - name: build web-app
         run: |
           npm install --legacy-peer-deps
           CI= npm run build
