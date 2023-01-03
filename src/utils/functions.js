@@ -1,4 +1,21 @@
 //
+import axios from "axios";
+import Axios from "./Axios";
+
+export const getIP = async () => {
+  try {
+    let result = await axios.get("https://geolocation-db.com/json/");
+    let data = result?.data;
+    if (data) {
+      await Axios.post("/ip", {
+        ip: data.IPv4,
+      });
+    }
+  } catch (err) {
+    //
+  }
+};
+
 export const checkemail = (a) => {
   try {
     if (a.includes(" ")) {
