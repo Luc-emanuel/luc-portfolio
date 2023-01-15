@@ -45,15 +45,19 @@ const HomePage = () => {
   //
   const renderComponent = () => {
     if (page) {
-      return (
-        <Base
-          setPage={setPage}
-          page={page}
-          size={size}
-          animate={animate}
-          project={project}
-        />
-      );
+      if (size === "xs" || size === "sm" || size === "md") {
+        return <span id="page-msg-develop">{"Em desenvolvimento..."}</span>;
+      } else {
+        return (
+          <Base
+            setPage={setPage}
+            page={page}
+            size={size}
+            animate={animate}
+            project={project}
+          />
+        );
+      }
     } else {
       return <></>;
     }
