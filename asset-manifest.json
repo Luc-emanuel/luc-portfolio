@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/luc-portfolio/static/css/main.280f1a72.css",
-    "main.js": "/luc-portfolio/static/js/main.0e6c3eb1.js",
+    "main.css": "/luc-portfolio/static/css/main.cf1a2c18.css",
+    "main.js": "/luc-portfolio/static/js/main.8da63780.js",
     "static/media/img1.png": "/luc-portfolio/static/media/img1.fe0ad16ab005d125c29a.png",
     "static/media/amazing_panoramic.jpg": "/luc-portfolio/static/media/amazing_panoramic.26f3b6a37584edf76fcb.jpg",
     "static/media/img4.png": "/luc-portfolio/static/media/img4.5f16dce4b9c7183e6d97.png",
@@ -10,11 +10,11 @@
     "static/media/me.jpg": "/luc-portfolio/static/media/me.0e97a9827b511943418b.jpg",
     "static/media/curriculo.pdf": "/luc-portfolio/static/media/curriculo.85ea190026c399845cc6.pdf",
     "index.html": "/luc-portfolio/index.html",
-    "main.280f1a72.css.map": "/luc-portfolio/static/css/main.280f1a72.css.map",
-    "main.0e6c3eb1.js.map": "/luc-portfolio/static/js/main.0e6c3eb1.js.map"
+    "main.cf1a2c18.css.map": "/luc-portfolio/static/css/main.cf1a2c18.css.map",
+    "main.8da63780.js.map": "/luc-portfolio/static/js/main.8da63780.js.map"
   },
   "entrypoints": [
-    "static/css/main.280f1a72.css",
-    "static/js/main.0e6c3eb1.js"
+    "static/css/main.cf1a2c18.css",
+    "static/js/main.8da63780.js"
   ]
 }
