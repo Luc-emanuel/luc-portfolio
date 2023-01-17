@@ -15,6 +15,8 @@ const Menu = ({
   setOpen,
   size,
   project,
+  setButtons = undefined,
+  buttons = undefined,
 }) => {
   const [listOpen, setListOpen] = useState(false);
   //
@@ -57,6 +59,9 @@ const Menu = ({
           style={open ? { fontSize: "30px" } : {}}
           onClick={() => {
             setOpen(!open);
+            if (setButtons !== undefined) {
+              setButtons({ ...buttons, buttonRight: !buttons.buttonRight });
+            }
           }}
         />
       </div>
@@ -94,6 +99,13 @@ const Menu = ({
                 onClick={() => {
                   setListOpen(false);
                   setPage(1);
+                  setOpen(!open);
+                  if (setButtons !== undefined) {
+                    setButtons({
+                      ...buttons,
+                      buttonRight: !buttons.buttonRight,
+                    });
+                  }
                 }}
               >
                 {"INICIO"}
@@ -167,6 +179,13 @@ const Menu = ({
                     <p
                       onClick={() => {
                         setPage(2, index);
+                        setOpen(!open);
+                        if (setButtons !== undefined) {
+                          setButtons({
+                            ...buttons,
+                            buttonRight: !buttons.buttonRight,
+                          });
+                        }
                       }}
                       style={project?.id === index ? { color: "#ff9900" } : {}}
                       id={`${basenamePage}-list-projects-item-title`}
@@ -207,6 +226,13 @@ const Menu = ({
                 onClick={() => {
                   setListOpen(false);
                   setPage(3);
+                  setOpen(!open);
+                  if (setButtons !== undefined) {
+                    setButtons({
+                      ...buttons,
+                      buttonRight: !buttons.buttonRight,
+                    });
+                  }
                 }}
               >
                 {"HISTÓRIA"}
@@ -242,6 +268,13 @@ const Menu = ({
                 onClick={() => {
                   setListOpen(false);
                   setPage(4);
+                  setOpen(!open);
+                  if (setButtons !== undefined) {
+                    setButtons({
+                      ...buttons,
+                      buttonRight: !buttons.buttonRight,
+                    });
+                  }
                 }}
               >
                 {"CONTATO"}

@@ -209,3 +209,222 @@ div#history-tech-item span {
   font-weight: 500;
   color: #aaa;
 }
+
+/*
+*
+MOBILE
+*
+*/
+
+div#v-history-section-mid-column {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div#v-history-column-line1 {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  min-height: 70px;
+  max-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#v-history-column-line1 span {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+div#v-history-column-line2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+div#v-history-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+div#v-history-card-line {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+div#v-history-card-line-line {
+  position: relative;
+  width: 6px;
+  height: 100%;
+  background-color: #303030;
+}
+
+div#v-history-card-line-line svg {
+  position: relative;
+  color: #ff9900;
+  left: -5px;
+  top: 16px;
+  transition: color 500ms, top 500ms;
+  transition-timing-function: ease;
+}
+
+div#v-history-card-line-line svg:hover {
+  color: #ffff00;
+}
+
+div#v-history-card-card {
+  position: relative;
+  width: 90%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #303030;
+  box-shadow: 0px 0px 10px 2px #202020;
+}
+
+div#v-history-card-card:after {
+  content: " ";
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid transparent;
+  border-left: 8px solid #303030;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  left: 100%;
+  top: 25px;
+  margin-top: -8px;
+}
+
+div#v-history-card-box {
+  position: relative;
+  width: 90%;
+  padding: 5% 0px 5% 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+div#v-history-card-title {
+  position: relative;
+  width: 100%;
+  min-height: 65px;
+  height: 65px;
+  max-height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+span#v-history-card-title-title {
+  font-family: "Poppins";
+  font-size: 13px;
+  font-weight: 500;
+  color: #ff9900;
+  margin-bottom: 1px;
+  width: 250px;
+}
+
+span#v-history-card-title-subtitle {
+  font-family: "Poppins";
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 500;
+  color: #ccc;
+  margin-bottom: 1px;
+}
+
+span#v-history-card-title-date {
+  font-family: "Poppins";
+  font-size: 11px;
+  font-weight: 500;
+  color: #00ff99;
+}
+
+div#v-history-card-desc {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div#v-history-card-tech {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#v-history-card-tech-line {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+div#v-history-tech-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #222;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+div#v-history-desc-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+div#v-history-desc-item svg {
+  position: relative;
+  font-size: 14px;
+  color: #ff9900;
+  margin-left: -5px;
+  margin-top: 2px;
+}
+
+div#v-history-desc-item span {
+  font-family: "Poppins";
+  font-size: 11px;
+  font-weight: 500;
+  color: #bbb;
+}
+
+div#v-history-tech-item span {
+  font-family: "Poppins";
+  font-size: 11px;
+  font-weight: 500;
+  color: #aaa;
+}

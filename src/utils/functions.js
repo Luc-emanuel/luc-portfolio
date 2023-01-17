@@ -91,7 +91,7 @@ export const tesF = (basenamePage, trigger) => {
   if (trigger === undefined) {
     let doc = getElement("id", `${basenamePage}-section-mid`);
     let doc2 = getElement("id", "transition-section-mid");
-    if (doc !== null) {
+    if (doc !== null && doc2 !== null) {
       doc.style["width"] = `${window.innerWidth * 0.8}px`;
       doc2.style["width"] = `${window.innerWidth * 0.8}px`;
     }
@@ -103,7 +103,7 @@ export const tesF = (basenamePage, trigger) => {
         //
         let docAlvo = getElement("id", `${basenamePage}-section-mid`);
         let docAlvo2 = getElement("id", "transition-section-mid");
-        if (docAlvo !== null) {
+        if (docAlvo !== null && docAlvo2 !== null) {
           docAlvo.style["width"] = `${width - 380}px`;
           docAlvo2.style["width"] = `${width - 380}px`;
         }
