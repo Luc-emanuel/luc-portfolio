@@ -9,6 +9,7 @@ import ynpr3 from "../assets/images/projects/ynpr/img3.png";
 import ynpr4 from "../assets/images/projects/ynpr/img4.png";
 import relds1 from "../assets/images/projects/relds/img1.png";
 import reload1 from "../assets/images/projects/reload/img1.png";
+import reload2 from "../assets/images/projects/reload/img2.png";
 
 export const home = {
   image: imageMe,
@@ -187,12 +188,34 @@ export const projects = [
       { title: "Status", value: "Concluído" },
       { title: "Cliente", value: "Reload Health" },
     ],
-    technologies: ["JavaScript", "ReactJS", "NodeJS", "Git"],
+    technologies: [
+      "JavaScript",
+      "TypeScript",
+      "ReactJS",
+      "NextJS",
+      "NodeJS",
+      "Git",
+    ],
     url: "https://kpsule.co",
     imgs: [reload1],
   },
   {
     id: 1,
+    title: "Kpsule Quiz",
+    subtitle: "Quiz",
+    desc: "A Reload Health está desenvolvendo um produto, o Kpsule, após desenvolver a Landing Page do Kpsule, passei a atuar na melhoria da performance do Quiz, onde redesenhei quase que totalmente o front-end para essa melhoria. Novas estruturas e organização para otimizar o processo e também melhorar a manutenção do código, visando o futuro. Bugs resolvidos que impactavam e muito na usabilidade e performance.",
+    details: [
+      { title: "Início", value: "Setembro 2022" },
+      { title: "Fim", value: "Dezembro 2022" },
+      { title: "Status", value: "Concluído" },
+      { title: "Cliente", value: "Reload Health" },
+    ],
+    technologies: ["JavaScript", "ReactJS", "NodeJS", "Git"],
+    url: "https://quiz.kpsule.co/",
+    imgs: [reload2],
+  },
+  {
+    id: 2,
     title: "GEA Sistemas",
     subtitle: "Sistema de gerenciamento de orçamentos e revisões",
     desc: "A GEA possui revendedores de seus produtos (bombas de leite, teteiras, etc..) que visitam fazendeiros e fazem seus orçamentos, isso tudo sendo no papel mesmo, onde era necessário apresentar diversas opções ao cliente por meio de papel. Então a ideia foi botar online esse sistema para gerar um orçamento e também o gerenciamento das manutenções/trocas períodicas. Assim foi desenvolvido um sistema online, onde o revendedor, estando na fazenda com uma conexão com internet acessa o sistema e pode fazer seus orçamentos tranquilamente, com todos os produtos a um clique, e podendo gerenciar as revisões, manutenções e trocas. O projeto foi 100% desenvolvido por mim, backend, frontend, design, banco de dados e cloud.",
@@ -215,7 +238,7 @@ export const projects = [
     imgs: [gea1, gea2],
   },
   {
-    id: 2,
+    id: 3,
     title: "RELDS - API",
     subtitle: "APIs",
     desc: "Uma vez presenciei algo intrigante, as lojas flutando o preço em poucos minutos para se passar por promoção, tudo bem, nao é errado. Só que eu queria ter algo meu que me mostra-se que os preços estão bons mesmo ou não, pegando todas as flutuações e listando pra mim. Assim fiz a base de uma API de scrap na Kabum (o driver de outras lojas estão em desenvolvimento), funcionando bem. O projeto funciona muito bem, me retornando os preços e salvando num banco de dados, onde posso fazer o que quiser com eles. Um front que exiba isso por exemplo.",
@@ -229,7 +252,7 @@ export const projects = [
     imgs: [relds1],
   },
   {
-    id: 3,
+    id: 4,
     title: "YNP rGame",
     subtitle: "Game em JavaScript",
     desc: "Eu estava pensando em fazer um joguinho visualmente simples mas que tivesse uma pegada de competição para prender o pessoal ali com seus amigos, amigos amam competir. Dai fiz esse game, que basicamente consiste em após fazer a preparação você escolhe um número e clica nele, após isso os números ficam mudando e você tem que procurar clicar no número que você escolheu, quão mais rápido for, mais pontos, mas cuidado, a punição por clicar errado é hard.",
