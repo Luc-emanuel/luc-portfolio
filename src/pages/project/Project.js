@@ -186,7 +186,19 @@ const Project = ({ basenamePage, setPage, size, open, animate, project }) => {
                         <span id={`v-${basenamePage}-card2-line-title`}>
                           {`${item.title}:`}
                         </span>
-                        <span id={`v-${basenamePage}-card2-line-value`}>
+                        <span
+                          id={`v-${basenamePage}-card2-line-value`}
+                          style={
+                            item.link
+                              ? { color: "#00ff99", cursor: "pointer" }
+                              : {}
+                          }
+                          onClick={() => {
+                            if (item.link) {
+                              window.open(item.link, "_blank");
+                            }
+                          }}
+                        >
                           {item.value}
                         </span>
                       </div>
@@ -344,7 +356,19 @@ const Project = ({ basenamePage, setPage, size, open, animate, project }) => {
                         <span id={`${basenamePage}-card2-line-title`}>
                           {`${item.title}:`}
                         </span>
-                        <span id={`${basenamePage}-card2-line-value`}>
+                        <span
+                          id={`${basenamePage}-card2-line-value`}
+                          style={
+                            item.link
+                              ? { color: "#00ff99", cursor: "pointer" }
+                              : {}
+                          }
+                          onClick={() => {
+                            if (item.link) {
+                              window.open(item.link, "_blank");
+                            }
+                          }}
+                        >
                           {item.value}
                         </span>
                       </div>

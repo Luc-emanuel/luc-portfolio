@@ -186,7 +186,11 @@ export const projects = [
       { title: "Início", value: "Agosto 2022" },
       { title: "Fim", value: "Outubro 2022" },
       { title: "Status", value: "Concluído" },
-      { title: "Cliente", value: "Reload Health" },
+      {
+        title: "Cliente",
+        value: "Reload Health",
+        link: "https://www.linkedin.com/company/reload-health/",
+      },
     ],
     technologies: [
       "JavaScript",
@@ -208,7 +212,11 @@ export const projects = [
       { title: "Início", value: "Setembro 2022" },
       { title: "Fim", value: "Dezembro 2022" },
       { title: "Status", value: "Concluído" },
-      { title: "Cliente", value: "Reload Health" },
+      {
+        title: "Cliente",
+        value: "Reload Health",
+        link: "https://www.linkedin.com/company/reload-health/",
+      },
     ],
     technologies: ["JavaScript", "ReactJS", "NodeJS", "Git"],
     url: "https://quiz.kpsule.co/",
@@ -223,7 +231,11 @@ export const projects = [
       { title: "Início", value: "Janeiro 2021" },
       { title: "Fim", value: "Abril 2022" },
       { title: "Status", value: "Concluído" },
-      { title: "Cliente", value: "GEA" },
+      {
+        title: "Cliente",
+        value: "GEA",
+        link: "https://www.linkedin.com/company/geagroup/",
+      },
     ],
     technologies: [
       "JavaScript",
