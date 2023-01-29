@@ -18,7 +18,7 @@ export const home = {
   study: "Biotechnology Student",
   email: "lucasemanuel-00000@hotmail.com",
   socials: [
-    "https://www.linkedin.com/in/lucas-ribeiro-2ba4101a2/",
+    "https://www.linkedin.com/in/lucas-emanuel-2ba4101a2/",
     "https://github.com/Luc-emanuel",
     "https://www.instagram.com/lucasr01123/",
   ],
@@ -52,7 +52,7 @@ export const infoContacts = [
   [
     {
       title: "LinkedIn",
-      value: "https://www.linkedin.com/in/lucas-ribeiro-2ba4101a2/",
+      value: "https://www.linkedin.com/in/lucas-emanuel-2ba4101a2/",
       link: true,
     },
     { title: "Github", value: "https://github.com/Luc-emanuel", link: true },
