@@ -110,3 +110,24 @@ export const getValueLocal = (key) => {
     return value;
   }
 };
+
+export const idade = (data) => {
+  var ano_aniversario = Number(data[2]),
+    mes_aniversario = Number(data[1]),
+    dia_aniversario = Number(data[0]);
+  var d = new Date(),
+    ano_atual = d.getFullYear(),
+    mes_atual = d.getMonth() + 1,
+    dia_atual = d.getDate(),
+    ano_aniversario_new = +ano_aniversario,
+    mes_aniversario_new = +mes_aniversario,
+    dia_aniversario_new = +dia_aniversario,
+    quantos_anos = ano_atual - ano_aniversario_new;
+  if (
+    mes_atual < mes_aniversario_new ||
+    (mes_atual === mes_aniversario_new && dia_atual < dia_aniversario_new)
+  ) {
+    quantos_anos--;
+  }
+  return quantos_anos < 0 ? 0 : quantos_anos;
+};

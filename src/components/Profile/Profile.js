@@ -6,6 +6,7 @@ import "react-circular-progressbar/dist/styles.css";
 import React, { useEffect, useState } from "react";
 import TechPercent from "../../components/TechPercent/TechPercent";
 import { MdDownload } from "react-icons/md";
+import { idade } from "../../utils/functions";
 
 const Profile = ({ basenamePage, setPage, size }) => {
   const [state, setState] = useState({
@@ -80,7 +81,7 @@ const Profile = ({ basenamePage, setPage, size }) => {
               {"País:"}
             </span>
             <span id={`${basenamePage}-section-left-mid-sec1-row-value`}>
-              {"Brazil"}
+              {home.pais}
             </span>
           </div>
           <div id={`${basenamePage}-section-left-mid-sec1-row`}>
@@ -88,7 +89,7 @@ const Profile = ({ basenamePage, setPage, size }) => {
               {"Cidade:"}
             </span>
             <span id={`${basenamePage}-section-left-mid-sec1-row-value`}>
-              {"Juazeiro"}
+              {home.city}
             </span>
           </div>
           <div id={`${basenamePage}-section-left-mid-sec1-row`}>
@@ -96,7 +97,7 @@ const Profile = ({ basenamePage, setPage, size }) => {
               {"Idade:"}
             </span>
             <span id={`${basenamePage}-section-left-mid-sec1-row-value`}>
-              {"25"}
+              {idade(home.age.split("-"))}
             </span>
           </div>
         </div>

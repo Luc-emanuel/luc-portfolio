@@ -14,6 +14,9 @@ import reload2 from "../assets/images/projects/reload/img2.png";
 export const home = {
   image: imageMe,
   name: "Lucas Emanuel",
+  pais: "Brasil",
+  city: "Juazeiro",
+  age: "16-07-1997",
   oficio: "Software Developer",
   study: "Biotechnology Student",
   email: "lucasemanuel-00000@hotmail.com",

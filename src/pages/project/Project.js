@@ -212,7 +212,7 @@ const Project = ({ basenamePage, setPage, size, open, animate, project }) => {
         <div id={`v-${basenamePage}-section-mid-bot`}>
           <div id={`v-${basenamePage}-section-mid-bot-box`}>
             <div id={`v-${basenamePage}-section-mid-bot-text`}>
-              <span>{"© 2022 Lucas Ribeiro"}</span>
+              <span>{"© 2022 Lucas Emanuel"}</span>
             </div>
           </div>
         </div>
@@ -382,7 +382,7 @@ const Project = ({ basenamePage, setPage, size, open, animate, project }) => {
         <div id={`${basenamePage}-section-mid-bot`}>
           <div id={`${basenamePage}-section-mid-bot-box`}>
             <div id={`${basenamePage}-section-mid-bot-text`}>
-              <span>{"© 2022 Lucas Ribeiro"}</span>
+              <span>{"© 2022 Lucas Emanuel"}</span>
             </div>
           </div>
         </div>
