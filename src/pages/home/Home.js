@@ -3,6 +3,7 @@ import "./index.css";
 import AnimationText from "../../components/AnimationText/AnimationText";
 import imageBackground from "../../assets/images/amazing_panoramic.jpg";
 import { home } from "../../utils/constants";
+import { anos } from "../../utils/functions";
 
 const Home = ({ basenamePage, setPage, size, open, animate }) => {
   //
@@ -77,7 +78,7 @@ const Home = ({ basenamePage, setPage, size, open, animate }) => {
                       <span
                         id={`v-${basenamePage}-section-mid-mid-line1-items-text-value`}
                       >
-                        {item.value}
+                        {index === 0 ? anos(item.value) : item.value}
                       </span>
                       <span
                         id={`v-${basenamePage}-section-mid-mid-line1-items-text-title`}
@@ -200,7 +201,7 @@ const Home = ({ basenamePage, setPage, size, open, animate }) => {
                       <span
                         id={`${basenamePage}-section-mid-mid-line1-items-text-value`}
                       >
-                        {item.value}
+                        {index === 0 ? anos(item.value) : item.value}
                       </span>
                       <span
                         id={`${basenamePage}-section-mid-mid-line1-items-text-title`}

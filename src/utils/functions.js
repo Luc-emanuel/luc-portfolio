@@ -111,6 +111,11 @@ export const getValueLocal = (key) => {
   }
 };
 
+export const anos = (ano) => {
+  let now = new Date();
+  return `${Number(now.getFullYear()) - Number(ano)}`;
+};
+
 export const idade = (data) => {
   var ano_aniversario = Number(data[2]),
     mes_aniversario = Number(data[1]),

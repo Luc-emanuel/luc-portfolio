@@ -41,7 +41,7 @@ export const home = {
     },
   ],
   stats: [
-    { title: "Anos de experiência", value: "3+" },
+    { title: "Anos de experiência", value: "2019" },
     { title: "Projetos Completos", value: "5" },
     { title: "Projeto em Progresso", value: "1" },
   ],
