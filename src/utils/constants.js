@@ -87,9 +87,28 @@ export const infoHistory = {
   ],
   work: [
     {
+      title: "RBR Digital",
+      subtitle: "Desenvolvedor Back-end",
+      date: "Fevereiro 2023 - presente",
+      points: [
+        "Desenvolvimento de microsserviços",
+        "Melhorias em aplicações já existentes",
+      ],
+      techs: [
+        "JavaScript",
+        "TypeScript",
+        "NodeJS",
+        "MongoDB",
+        "Jest",
+        "Docker",
+        "Git",
+        "Scrum",
+      ],
+    },
+    {
       title: "Freelancer - Autônomo",
       subtitle: "Desenvolvedor Full Stack",
-      date: "Dezembro 2022 - presente",
+      date: "Dezembro 2022 - Fevereiro 2023",
       points: [
         "Desenvolvimento de aplicações web e mobile",
         "Projetos de back-end e front-end",
