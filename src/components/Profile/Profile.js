@@ -5,7 +5,7 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import React, { useEffect, useState } from "react";
 import TechPercent from "../../components/TechPercent/TechPercent";
-import { MdDownload } from "react-icons/md";
+//import { MdDownload } from "react-icons/md";
 import { idade } from "../../utils/functions";
 
 const Profile = ({ basenamePage, setPage, size }) => {
@@ -201,7 +201,7 @@ const Profile = ({ basenamePage, setPage, size }) => {
         </div>
         <div id={`${basenamePage}-section-left-mid-sec4`}>
           <div id={`${basenamePage}-section-left-mid-sec4-button`}>
-            <a
+            {/*a
               id={`${basenamePage}-button-download`}
               href={home.cv}
               download="lucas-curriculo.pdf"
@@ -210,7 +210,7 @@ const Profile = ({ basenamePage, setPage, size }) => {
             >
               <span>{"DOWNLOAD CV"}</span>
               <MdDownload id={`${basenamePage}-button-download-icon`} />
-            </a>
+              </a>*/}
           </div>
         </div>
       </div>
